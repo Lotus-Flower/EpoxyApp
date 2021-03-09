@@ -1,6 +1,10 @@
 package meehan.matthew.epoxyapp
 
 import androidx.lifecycle.ViewModel
+import meehan.matthew.epoxyapp.model.ArticleEpoxyModel
+import meehan.matthew.epoxyapp.model.ArticleHeaderModel
+import meehan.matthew.epoxyapp.model.HeadlineArticleModel
+import meehan.matthew.epoxyapp.model.PhotoArticleModel
 
 class ArticleViewModel : ViewModel() {
 

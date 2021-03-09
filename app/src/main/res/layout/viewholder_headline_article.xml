@@ -6,7 +6,7 @@
     <data>
         <variable
             name="model"
-            type="meehan.matthew.epoxyapp.HeadlineArticleModel" />
+            type="meehan.matthew.epoxyapp.model.HeadlineArticleModel" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

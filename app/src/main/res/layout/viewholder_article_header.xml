@@ -6,7 +6,7 @@
     <data>
         <variable
             name="model"
-            type="meehan.matthew.epoxyapp.ArticleHeaderModel" />
+            type="meehan.matthew.epoxyapp.model.ArticleHeaderModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

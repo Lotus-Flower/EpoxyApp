@@ -4,6 +4,7 @@ import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import com.airbnb.epoxy.EpoxyRecyclerView
 import com.squareup.picasso.Picasso
+import meehan.matthew.epoxyapp.model.ArticleEpoxyModel
 
 @BindingAdapter("recyclerModels")
 fun bindRecyclerModels(epoxyRecyclerView: EpoxyRecyclerView, models: List<ArticleEpoxyModel>) {
