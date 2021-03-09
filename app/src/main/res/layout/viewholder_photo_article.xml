@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="model"
+            type="meehan.matthew.epoxyapp.PhotoArticleModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_article_height"
+        android:layout_marginBottom="@dimen/margin_standard"
+        app:cardCornerRadius="@dimen/margin_standard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_standard">
+
+            <ImageView
+                android:id="@+id/article_image"
+                android:contentDescription="@null"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                bind:remoteImageUrl="@{model.photoUrl}"
+                tools:src="@tools:sample/avatars"/>
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_standard"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:text="@{model.title}"
+                app:layout_constraintStart_toEndOf="@id/article_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/description_text_view"
+                tools:text="Headline"/>
+
+            <TextView
+                android:id="@+id/description_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/tertiary_text_light"
+                android:text="@{model.description}"
+                app:layout_constraintStart_toStartOf="@id/title_text_view"
+                app:layout_constraintTop_toBottomOf="@id/title_text_view"
+                app:layout_constraintEnd_toEndOf="@id/title_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

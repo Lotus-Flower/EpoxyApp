@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="article_header_height">64dp</dimen>
+    <dimen name="headline_article_height">80dp</dimen>
+    <dimen name="photo_article_height">120dp</dimen>
+    <dimen name="margin_standard">8dp</dimen>
+</resources>
